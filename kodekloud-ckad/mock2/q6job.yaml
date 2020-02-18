@@ -1,0 +1,23 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  labels:
+    job: newJob
+  name: newJob
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        job: newJob
+    spec:
+      containers:
+      - args:
+        - kubectl
+        - run
+        image: docker/whalesay
+        name: newJob
+        resources: {}
+      restartPolicy: Always
+status: {}
