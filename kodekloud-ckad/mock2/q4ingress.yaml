@@ -1,0 +1,13 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: my-video-ingress
+spec:
+  rules:
+  - host: ckad-mock-exam-solution.com
+    http:
+      paths:
+      - path: /video
+        backend:
+          serviceName: my-video-service
+          servicePort: 8080
