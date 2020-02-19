@@ -31,3 +31,6 @@ spec:
                 values:
                 - beta
 status: {}
+
+# run this command first
+# kubectl label node node02 app_type=beta

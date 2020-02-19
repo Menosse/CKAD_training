@@ -10,7 +10,7 @@ spec:
   - port: 80
     protocol: TCP
     targetPort: 8080
-    NodePort: 30083
+    nodePort: 30083
   selector:
     tier: frontend
   type: NodePort
