@@ -20,3 +20,6 @@ spec:
       httpGet:
         path: /ready
         port: 8080
+
+# run this first 
+# kubectl delete pod pod-with-rprobe
