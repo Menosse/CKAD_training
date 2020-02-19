@@ -4,9 +4,8 @@ metadata:
   name: custom-volume
 spec:
   capacity:
-    storage: "50MiB"
-  accessModes:
-    - ReadWriteMany
+    storage: "50Mi"
+  accessModes: ["ReadWriteMany"]
   persistentVolumeReclaimPolicy: Retain
   hostPath:
-    patH: /opt/data
+    path: /opt/data
